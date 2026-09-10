@@ -1,0 +1,23 @@
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"user.readByGroup.example"})
+
+// FOAM
+// simple password management
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"menu.read.reset-password"})
+
+// spid
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"serviceprovider.read.example"})
+
+// Password
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"service.passwordDAO"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"menu.read.password"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"password.create"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"password.read.*"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"password.update.*"})
+
+// specific model
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"service.exampleDAO"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"example.create"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"example.read.*"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"example.update.*"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"example.delete.*"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"example",targetId:"menu.read.example.example"})

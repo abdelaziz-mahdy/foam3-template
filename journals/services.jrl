@@ -1,0 +1,18 @@
+p({
+  "class": "foam.core.boot.CSpec",
+  "name": "exampleDAO",
+  "description": "",
+  "serve": true,
+  "authenticate": true,
+  "keywords": [ "example" ],
+  "serviceScript": """
+    return new foam.dao.EasyDAO.Builder(x)
+      .setOf(com.foamdev.Example.getOwnClassInfo())
+      .setPm(true)
+      .setFuid(true)
+      .setAuthorize(false)
+      .setJournalType(foam.dao.JournalType.SINGLE_JOURNAL)
+      .build();
+  """,
+  "client": `{"of":"com.foamdev.Example"}`
+})

@@ -1,0 +1,4 @@
+[submodule "foam3"]
+	path = foam3
+	url = https://github.com/abdelaziz-mahdy/foam3
+	branch = vercel-deploy-template
