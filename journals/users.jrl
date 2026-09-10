@@ -4,13 +4,13 @@ p({
   "spid":"example",
   "lifecycleState":1,
   "group":"system",
-  "firstName":"admin",
+  "firstName":"demo",
   "middleName":"",
   "lastName":"admin",
-  "email":"admin@foamdev.com",
-  "userName":"admin",
+  "email":"demo@foamdev.com",
+  "userName":"demo",
   "birthday":"1982-07-07T23:12:00.0Z",
-  "password":"yn6MAh/iB3M=:OO+QJmh63IhEYG17cyZK9kmzQnDYLU9sBCt4OG/B0DTU4qDHRdFRNgISkLQApkHYW9ILlacdQz+P2NbTEBW+GA==",
+  "password":"HT0T36r3UY4=:eJ699INQYqd8mo0H/inSQ2Dw4FaIqAV8LO/AkAzPPe/RZJoUpRB0zNZDStMSgHemqDlfPlvDo95llht6KrC0Dw==",
   "emailVerified":true,
   "loginEnabled":true
 })
