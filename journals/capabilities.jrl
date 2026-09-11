@@ -6,6 +6,6 @@ p({
   "name":"Example",
   "description":"Example service provider",
   "enabled":true,
-  "anonymousUser":42,
+  "anonymousUser":43,
   "permissionsGranted":["language.read.en-"]
 })

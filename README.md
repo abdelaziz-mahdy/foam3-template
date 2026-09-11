@@ -7,7 +7,7 @@ A [FOAM3](https://github.com/foam-foundation/foam3) application as created by `.
 
 Either button clones this repository into your account and deploys it. Add your models under `src/` and push; the host rebuilds and redeploys.
 
-**Vercel is a demo, not a deployment.** Vercel runs the container as a function: requests are spread over several instances that share no memory, there is no instance cap or session affinity, and only `/tmp` is writable. FOAM keeps sessions in the JVM, so a login on one instance is unknown to the next and a real login loops. This template therefore signs every visitor in as the admin (`demo` / `demo`) without a login step: `journals/capabilities.jrl` points the service provider's `anonymousUser` at the admin, so every instance resolves a visitor the same way. Remove that before deploying anything real.
+**Vercel is a demo, not a deployment.** Vercel runs the container as a function: requests are spread over several instances that share no memory, there is no instance cap or session affinity, and only `/tmp` is writable. FOAM keeps sessions in the JVM, so a login on one instance is unknown to the next and a real login loops. `Dockerfile.vercel` therefore sets `SESSION_DEFAULT_USER` to the admin (`demo` / `demo`), and `deployment/vercel/run.sh` passes it as `-Dsession.defaultUser`, so every new session on every instance is signed in as the admin. Unset the variable in the Vercel project settings to get the login page back, and do not deploy anything real this way.
 
 **Cloud Run keeps one instance.** `app.json` sets `max-instances` to 1 and builds the plain `Dockerfile`, so sessions and logins behave as on a server. It needs a Google Cloud project with billing enabled; the free tier covers a demo.
 
