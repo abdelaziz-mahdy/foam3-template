@@ -5,6 +5,6 @@ p({
   "spid":"example",
   "name":"example",
   "registrationGroup":"example",
-  "appName":"undefined",
+  "appName":"Example",
   "defaultMenu": ["example.example"]
 })

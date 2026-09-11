@@ -4,7 +4,9 @@ A [FOAM3](https://github.com/foam-foundation/foam3) application as created by `.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/abdelaziz-mahdy/foam3-template&project-name=foam3-demo&repository-name=foam3-demo)
 
-The button clones this repository into your GitHub account and deploys it. Log in with `demo` / `demo`. Add your models under `src/` and push; Vercel rebuilds and redeploys.
+The button clones this repository into your GitHub account and deploys it. Add your models under `src/` and push; Vercel rebuilds and redeploys.
+
+Visitors are signed in as the admin (`demo` / `demo`) without a login step: Vercel runs several instances of the container and routes requests between them, and FOAM keeps sessions in the JVM, so a login on one instance is unknown to the next. `journals/capabilities.jrl` points the service provider's `anonymousUser` at the admin so every instance resolves a visitor the same way. For a deployment with real logins, run the plain `Dockerfile` on a host that keeps one instance.
 
 ## Run locally
 
